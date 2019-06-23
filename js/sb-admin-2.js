@@ -17,6 +17,11 @@
     };
   });
 
+
+function changeText() {
+  Patrick.style= "width: 80% !important";;
+}
+
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
     if ($(window).width() > 768) {
@@ -45,5 +50,8 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+  var totalQuestions = 4;
+var currentQuestion = 0;
+var $progressbar = $("#progressbar");
 
 })(jQuery); // End of use strict

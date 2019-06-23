@@ -40,7 +40,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -55,7 +55,7 @@
       </div>
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="BET100.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>BET 100</span></a>
@@ -80,7 +80,6 @@
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
-
     </ul>
     <!-- End of Sidebar -->
 
@@ -101,7 +100,6 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px; padding-right: 20px; padding-top: 5px">Dashboard</h1>
               <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
@@ -170,11 +168,57 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=bWFsb25leXAxMjEwQGdtYWlsLmNvbQ&amp;color=%237986CB&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK" style="border-width:0" width="1250" height="500" frameborder="0" scrolling="no"></iframe>
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">BET 100 Topics</h1>
+            <div class="col-lg-5 mb-4" align="right">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sort By
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="BET100-topics-date.html">Date</a>
+                  <a class="dropdown-item" href="BET100-topics-comp-high.html">Highest to lowest comprehension</a>
+                  <a class="dropdown-item" href="#"><b>Lowest to highest comprehension</b><span align="right" style="margin-left: 14px"><b>✓</b></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Row -->
+          <div class="container" style="margin-top:1em;">
+            <div class="row">
+              <p style="margin-left: 20px">Topics<span align="right" style="margin-left: 786px">Comprehension</span></p>
+              <div class="col-xs-12" style="width: 90%">
+                <ul class="list-group">
+                  <li class="list-group-item">Key Resources, Activities, and Partnerships<span align="right" style="margin-left: 565px; color: #e74a3b">Confused</span></li>
+                  <li class="list-group-item">Foundations of Entrepreneurship<span align="right" style="margin-left: 640px; color: #e74a3b">Confused</span></li>
+                  <li class="list-group-item">Business Models<span align="right" style="margin-left: 695px; color: #f6c23e">Slightly Confused</span></li>
+                  <li class="list-group-item">Channels and Customer Relationships<span align="right" style="margin-left: 529px; color: #36b9cc">Slightly Understand</span></li>
+                  <li class="list-group-item">Creative Problem Solving and Design Thinking<span align="right" style="margin-left: 470px; color: #36b9cc">Slightly Understand</span></li>
+                  <li class="list-group-item">Identifying Problems (Opportunities)<span align="right" style="margin-left: 540px; color: #36b9cc">Slightly Understand</span></li>
+                  <li class="list-group-item">Understanding Customer Segments and Value Propositions<span align="right" style="margin-left: 434px; color: #1cc88a">Understand</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Content Row -->
 
+          <div class="row">
 
+          </div>
 
           <!-- Content Row -->
+          <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+
+            </div>
+
+            <div class="col-lg-6 mb-4">
+
+            </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -186,7 +230,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; nima inc. 2019</span>
+            <span>Copyright &copy; nima 2019</span>
           </div>
         </div>
       </footer>

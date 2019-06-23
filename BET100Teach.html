@@ -40,8 +40,8 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+      <li class="nav-item">
+        <a class="nav-link">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -55,8 +55,8 @@
       </div>
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="BET100.html">
+      <li class="nav-item active">
+        <a class="nav-link" href="BET100Teach.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>BET 100</span></a>
       </li>
@@ -64,14 +64,29 @@
       <li class="nav-item">
         <a class="nav-link">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>ECON 101</span></a>
+          <span>SYDE 113</span></a>
+      </li>
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>SYDE 114</span></a>
       </li>
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>BME 121</span></a>
+          <span>SYDE 121</span></a>
       </li>
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>SYDE 122</span></a>
+      </li>
+
+      
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -101,7 +116,6 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px; padding-right: 20px; padding-top: 5px">Dashboard</h1>
               <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
@@ -119,26 +133,14 @@
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Patrick Maloney</span>
-                <img class="img-profile rounded-circle" src="patrick.png">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Prof. Rahman</span>
+                <img class="img-profile rounded-circle" src="marwan.png">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -170,11 +172,157 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=bWFsb25leXAxMjEwQGdtYWlsLmNvbQ&amp;color=%237986CB&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK" style="border-width:0" width="1250" height="500" frameborder="0" scrolling="no"></iframe>
-
-
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">BET 100</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
 
           <!-- Content Row -->
+          <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+				
+				<!-- Lecture Pace Card -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Lecture Pace (LIVE)</h6>
+                </div>
+                <div class="card-body">
+                  
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+				  </div>
+				  
+                  <h6 class="font-weight-bold">Too Slow<span class="float-right">Too Fast</span></h6>
+
+				  
+                </div>
+              </div>
+			  
+              <!-- Recent Class Comprehension Level Card -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Comprehension Level by Topic (LIVE)</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Entrepreneurial Sales<span class="float-right"></span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: 84%; background-color:RebeccaPurple !important;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">84%</div>
+				  </div>
+				  
+                  <h4 class="small font-weight-bold">Marketing Management<span class="float-right"></span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: 45%; background-color:RebeccaPurple !important;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">45%</div>
+                  </div>
+				  
+                  <h4 class="small font-weight-bold">Strategic Marketing Measurement<span class="float-right"></span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: 92%; background-color:RebeccaPurple !important;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">92%</div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+			
+
+            <div class="col-lg-6 mb-4">
+			
+			<!-- Comprehension Statistics Card
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Comprehension Statistics</h6>
+                </div>
+                <div class="card-body">
+				  <h4 class="small font-weight-bold">Entrepreneurial Sales<span class="float-right"></span></h4>
+                  <div class="progress mb-4">
+					  <div class="progress-bar bg-success" role="progressbar" style="width:50%">
+						Understand
+					  </div>
+					  <div class="progress-bar bg-info" role="progressbar" style="width:20%">
+						Slightly Understand
+					  </div>
+					  <div class="progress-bar bg-warning" role="progressbar" style="width:20%">
+						Slightly Confused
+					  </div>
+					  <div class="progress-bar bg-danger" role="progressbar" style="width:10%">
+						Confused
+					  </div>
+				  </div>
+				  
+				  <h4 class="small font-weight-bold">Marketing Management<span class="float-right"></span></h4>
+				  <div class="progress mb-4">
+					  <div class="progress-bar bg-success" role="progressbar" style="width:20%">
+						Understand
+					  </div>
+					  <div class="progress-bar bg-info" role="progressbar" style="width:20%">
+						Slightly Understand
+					  </div>
+					  <div class="progress-bar bg-warning" role="progressbar" style="width:20%">
+						Slightly Confused
+					  </div>
+					  <div class="progress-bar bg-danger" role="progressbar" style="width:40%">
+						Confused
+					  </div>
+				  </div>
+				  
+				  <h4 class="small font-weight-bold">Strategic Marketing Measurement<span class="float-right"></span></h4>
+				  <div class="progress mb-4">
+					  <div class="progress-bar bg-success" role="progressbar" style="width:70%">
+						Understand
+					  </div>
+					  <div class="progress-bar bg-info" role="progressbar" style="width:10%">
+						
+					  </div>
+					  <div class="progress-bar bg-warning" role="progressbar" style="width:10%">
+						
+					  </div>
+					  <div class="progress-bar bg-danger" role="progressbar" style="width:10%">
+						Confused
+					  </div>
+				  </div>
+
+                </div>
+              </div>-->
+
+
+
+              <!-- Upcoming Class Card -->
+              <div class="card shadow mb-4" >
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Upcoming Lecture Topics</h6>
+                </div>
+                <div class="card-body">
+                  <h3 class="small font-weight-bold">Organizational Processes</h4>
+                  
+                  <h3 class="small font-weight-bold">Managing Innovation and Entrepreneurship</h4>
+                  
+                  <h3 class="small font-weight-bold">Emerging Trends</h4>
+                  
+                  <h1 class="small font-weight-bold">Introduction to Operations Management</h1>
+                  
+                </div>
+              </div>
+
+               <!-- Approach -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h5 class="m-0 font-weight-bold text-primary">Analytics</h5>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="btn btn-primary btn-lg btn-block" href="BET100.html" style="margin-bottom: 10px; margin-top: 10px"><a class="btn btn-primary btn-lg btn-block" href="stats.html">View Analytics</a></button>
+                </div>
+
+
+              </div>
+             
+            
+              
+
+            </div>
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -186,7 +334,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; nima inc. 2019</span>
+            <span>Copyright &copy; nima 2019</span>
           </div>
         </div>
       </footer>
